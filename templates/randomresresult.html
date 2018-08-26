@@ -1,0 +1,62 @@
+<!--Name:PRADEEP RAVICHANDRAN
+ID:1001553352
+CSE 6331-Cloud Computing
+Assignment 6
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restricted Queries Result</title>
+</head>
+<body>
+ <table border = 1>
+         <thead>
+            <td>time</td>
+            <td>latitude</td>
+            <td>longitude</td>
+            <td>depth</td>
+            <td>mag</td>
+            <td>magType</td>
+            <td>nst</td>
+             <td>gap</td>
+             <td>dmin</td>
+             <td>rms</td>
+             <td>id</td>
+             <td>place</td>
+             <td>depthError</td>
+              <td>magError</td>
+              <td>magNst</td>
+              <td>locationSource</td>
+
+
+         </thead>
+
+         {% for row in lis %}
+            {% for rows in row %}
+         <tr>
+            <td>{{rows[0]}}</td>
+            <td>{{rows[1]}}</td>
+            <td> {{rows[2]}}</td>
+            <td>{{rows[3]}}</td>
+            <td>{{rows[4]}}</td>
+            <td> {{rows[5]}}</td>
+             <td>{{rows[6]}}</td>
+            <td>{{rows[7]}}</td>
+            <td> {{rows[8]}}</td>
+            <td>{{rows[9]}}</td>
+            <td> {{rows[10]}}</td>
+            <td>{{rows[11]}}</td>
+            <td>{{rows[12]}}</td>
+            <td> {{rows[13]}}</td>
+             <td> {{rows[14]}}</td>
+            <td>{{rows[15]}}</td>
+         </tr>
+         {% endfor %}
+      {% endfor %}
+      </table>
+
+</body>
+</html>

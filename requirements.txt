@@ -1,0 +1,7 @@
+Flask
+pandas
+scipy
+scikit-learn
+pymemcache
+python-binary-memcached
+redis

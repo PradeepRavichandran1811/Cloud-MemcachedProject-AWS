@@ -1,0 +1,32 @@
+<!--Name:PRADEEP RAVICHANDRAN
+ID:1001553352
+CSE 6331-Cloud Computing
+Assignment 6
+-->
+
+<!doctype html>
+<html>
+	<body background="./static/aws.jpg">
+
+		<center>
+		<header> <h1 style="color:white"> Welcome to My AWS Cloud </h1> </header>
+		<br> <br>
+            <h1 style="color:orange">Pradeep Ravichandran</h1>
+            <h1 style="color:orange">1001553352</h1>
+            <h3 style="color:white"> You can Upload CSV File here !! </h3>
+            <form action="{{ url_for('csv') }}" method="POST" enctype = "multipart/form-data" style="color:white">
+             Upload CSV:  <input type="file" name="val"><br>
+            <br>
+            <input type="submit" name="Submit"><br>
+            </form>
+            <br>
+
+            <br>
+            <h2><a href="/netid" style="color:white">Random Queries</a></h2>
+            <h2><a href="/randr" style="color:white">Random Restricted Queries without Memcache</a></h2>
+            <h2><a href="/getsize" style="color:white">Size of the Directory</a></h2>
+            <h2><a href = "/lists" style="color:white">Retrieve Table</a></h2>
+
+        </center>
+	</body>
+</html>
