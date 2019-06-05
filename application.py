@@ -1,7 +1,5 @@
 #Name:PRADEEP RAVICHANDRAN
-#ID:1001553352
 #CSE 6331-Cloud Computing
-#Assignment 6
 
 import os
 from flask import Flask, render_template, request
